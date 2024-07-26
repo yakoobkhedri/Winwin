@@ -10,3 +10,125 @@
   font-weight: 700;
   src: url("./fonts/woff/IRANSansXFaNum-Bold.woff") format("woff"); */
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px!important;
+  height: 50px!important;
+  background-color: rgb(41, 151, 101)!important;
+  border-radius: 100%!important;
+  transition: all 0.4s!important;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #191f2d!important;
+}
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  transform: scale(0.9)!important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 12px!important;
+}
+input[type="range"] {
+  height: 46px!important;
+  -webkit-appearance: none!important;
+  margin: 10px 0!important;
+  width: 100%!important;
+}
+input[type="range"]:focus {
+  outline: none!important;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%!important;
+  height: 1px!important;
+  cursor: pointer!important;
+  animate: 0.2s!important;
+  box-shadow: 0px 0px 0px #299765!important;
+  background: #299765!important;
+  border-radius: 0px!important;
+  border: 1px solid #299765!important;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #ffffff!important;
+  border: 10px solid #299765!important;
+  height: 12px!important;
+  width: 12px!important;
+  border-radius: 50px!important;
+  background: #ffffff!important;
+  cursor: pointer!important;
+  -webkit-appearance: none!important;
+  margin-top: -20px!important;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #299765!important;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%!important;
+  height: 1px!important;
+  cursor: pointer!important;
+  animate: 0.2s!important;
+  box-shadow: 0px 0px 0px #299765!important;
+  background: #299765!important;
+  border-radius: 0px!important;
+  border: 1px solid #299765!important;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #ffffff!important;
+  border: 10px solid #299765!important;
+  height: 12px!important;
+  width: 12px!important;
+  border-radius: 50px!important;
+  background: #ffffff!important;
+  cursor: pointer!important;
+}
+input[type="range"]::-ms-track {
+  width: 100%!important;
+  height: 1px!important;
+  cursor: pointer!important;
+  animate: 0.2s!important;
+  background: transparent!important;
+  border-color: transparent!important;
+  color: transparent!important;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #299765!important;
+  border: 1px solid #299765!important;
+  border-radius: 0px!important;
+  box-shadow: 0px 0px 0px #299765!important;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #299765!important;
+  border: 1px solid #299765!important;
+  border-radius: 0px!important;
+  box-shadow: 0px 0px 0px #299765!important;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px!important;
+  box-shadow: 0px 0px 0px #ffffff!important;
+  border: 10px solid #299765!important;
+  height: 12px!important;
+  width: 12px!important;
+  border-radius: 50px!important;
+  background: #ffffff!important;
+  cursor: pointer!important;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #299765!important;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #299765!important;
+}
+.tab.active {
+  background-color: #299765!important;
+  color: white!important;
+}
+.timeline.active::before{
+  @apply border-r-2 border-dashed border-primary bg-transparent
+}
+.timeline.active{
+}
+.timeline.active > div:last-child{
+  @apply bg-white ring-primary
+}

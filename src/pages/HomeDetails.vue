@@ -636,7 +636,7 @@
                           <div
                             class="flex items-center justify-between gap-2 font-bold"
                           >
-                          <p>(AED 7,370)</p>
+                            <p>(AED 7,370)</p>
                           </div>
                           <p class="text-gray-700">Service charges</p>
                         </div>
@@ -644,20 +644,39 @@
                           <div
                             class="flex items-center justify-between gap-2 font-bold"
                           >
-                          <p>(AED 16,431)</p>
+                            <p>(AED 16,431)</p>
                           </div>
                           <p class="text-gray-700">Mgmt. and maintenance</p>
                         </div>
                       </div>
                       <div class="flex items-center justify-between gap-3 py-4">
-                          <div
-                            class="flex items-center justify-between gap-2 font-bold"
-                          >
+                        <div
+                          class="flex items-center justify-between gap-2 font-bold"
+                        >
                           <p class="text-primary">AED 94.949</p>
-                          </div>
-                          <p class="text-gray-700">Net Income</p>
+                        </div>
+                        <p class="text-gray-700">Net Income</p>
                       </div>
-                      <div class="flex items-center mt-5 bg-gray-100  p-2 rounded-lg justify-center opacity-70 gap-2 font-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path><path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"></path></svg><p>This is an estimate for the 1st year of ownership</p></div>
+                      <div
+                        class="flex items-center mt-5 bg-gray-100 p-2 rounded-lg justify-center opacity-70 gap-2 font-bold"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-info-circle"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                          ></path>
+                          <path
+                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                          ></path>
+                        </svg>
+                        <p>This is an estimate for the 1st year of ownership</p>
+                      </div>
                     </div>
                     <div class="hidden">
                       <div class="py-5 border-b">
@@ -677,7 +696,7 @@
                           <div
                             class="flex items-center justify-between gap-2 font-bold"
                           >
-                          <p>AED 255,695</p>
+                            <p>AED 255,695</p>
                           </div>
                           <p class="text-gray-700">Transaction costs</p>
                         </div>
@@ -685,31 +704,184 @@
                           <div
                             class="flex items-center justify-between gap-2 font-bold"
                           >
-                          <p>1.5%</p>
+                            <p>1.5%</p>
                           </div>
                           <p class="text-gray-700">Stake fee</p>
                         </div>
                       </div>
                       <div class="flex items-center justify-between gap-3 py-4">
-                          <div
-                            class="flex items-center justify-between gap-2 font-bold"
-                          >
+                        <div
+                          class="flex items-center justify-between gap-2 font-bold"
+                        >
                           <p class="text-primary">AED 1.943.695</p>
-                          </div>
-                          <p class="text-gray-700">Investment cost</p>
+                        </div>
+                        <p class="text-gray-700">Investment cost</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="mt-8">
+              <div class="mt-8 border-b pb-6">
                 <h1
                   class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
                 >
                   Funding timeline
                 </h1>
                 <div class="mt-12">
-
+                  <div
+                    class="flex items-center justify-end mt-5 bg-gray-100 px-5 py-2 rounded-lg opacity-70 gap-2 font-bold"
+                  >
+                    <p>This timeline is an estimate. Actual dates may vary</p>
+                  </div>
+                  <div class="text-right mt-9">
+                    <div
+                      class="flex items-start justify-end timeline active gap-4 pb-5 relative before:absolute before:bg-gray-300 before:w-0.5 before:h-full before:top-1 before:-z-1 before:right-[5px]"
+                    >
+                      <div>
+                        <p class="font-bold">Lates funding date</p>
+                        <p class="opacity-60 text-sm font-semibold">
+                          27 ژوئیه 2024
+                        </p>
+                        <p class="text-sm font-semibold mt-2">
+                          This is a conservative estimate for the closing date
+                          of the property funding
+                        </p>
+                      </div>
+                      <div
+                        class="w-3 h-3 rounded-full ring-4 ring-gray-300 relative z-1 bg-gray-500 mt-2"
+                      ></div>
+                    </div>
+                    <div
+                      class="flex items-start justify-end timeline gap-4 pb-5 relative before:absolute before:bg-gray-300 before:w-0.5 before:h-full before:top-1 before:-z-1 before:right-[5px]"
+                    >
+                      <div>
+                        <p class="font-bold">Ownership documents distributed</p>
+                        <p class="opacity-60 text-sm font-semibold">
+                          11 اوت 2024
+                        </p>
+                        <p class="text-sm font-semibold mt-2">
+                          This is a conservative estimate for the closing date
+                          of the property funding
+                        </p>
+                      </div>
+                      <div
+                        class="w-3 h-3 rounded-full ring-4 ring-gray-300 relative z-1 bg-gray-500 mt-2"
+                      ></div>
+                    </div>
+                    <div class="flex items-start justify-end timeline gap-4">
+                      <div>
+                        <p class="font-bold">First rental payment</p>
+                        <p class="opacity-60 text-sm font-semibold">
+                          31 اوت 2024
+                        </p>
+                        <div
+                          class="rounded-lg text-sm font-bold inline-flex items-center justify-end gap-2 py-1 px-2 text-primary bg-[#afd0b87c] mt-3 text-right"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-info-circle"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            />
+                            <path
+                              d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                            />
+                          </svg>
+                          <p>Guaranteed by 30 سپتامبر 2024</p>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-shield-check"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"
+                            />
+                            <path
+                              d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"
+                            />
+                          </svg>
+                        </div>
+                        <p class="text-sm font-semibold mt-2">
+                          This is a conservative estimate for the closing date
+                          of the property funding
+                        </p>
+                      </div>
+                      <div
+                        class="w-3 h-3 rounded-full ring-4 ring-gray-300 relative z-1 bg-gray-500 mt-2"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 border-b pb-6"> 
+                 <div class="border rounded-lg overflow-hidden"> 
+                  <div class="font-bold text-center p-3 bg-gray-100">Exit options</div>
+                  <div class="p-4"> 
+                    <div class="border-b pb-6"> 
+                      <div class="flex items-center justify-between"> 
+                      <p class="font-bold">Exit window</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows text-yellow-600" viewBox="0 0 16 16">
+  <path d="M6.555 1.375 0 2.237v5.45h6.555zM0 13.795l6.555.933V8.313H0zm7.278-5.4.026 6.378L16 16V8.395zM16 0 7.33 1.244v6.414H16z"/>
+</svg>
+                    </div>
+                    <p class="mt-2"> 
+                      Exit the property early after 1 year by selling shares in our biannual Exit Window.
+                    </p>
+                    <router-link to="" class="flex items-center justify-end gap-3 mt-4 text-primary font-bold">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg>
+                     <p>Explore exit windows</p>
+                    </router-link>
+                    </div>
+                    <p class="table justify-center bg-gray-200 text-gray-700 -mt-3 font-bold mx-auto rounded-full px-4">OR</p>
+                    <div class="mt-7"> 
+                      <div class="flex items-center justify-between"> 
+                      <p class="font-bold">Full sale of property</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill text-yellow-600" viewBox="0 0 16 16">
+  <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+</svg>
+                    </div>
+                    <p class="mt-2"> 
+                      Exit the property early after 1 year by selling shares in our biannual Exit Window.
+                    </p>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+              <div class="mt-8 border-b pb-6"> 
+                <h1
+                  class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+                >
+                  Location
+                </h1>
+                <div class="mt-12">
+                 <div class="flex items-center gap-2"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt text-primary flex-shrink-0" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg>
+                   <p>The Greens and Views, Dubai, United Arab Emirates</p>
+                 </div>
+                 <img alt="img" src="../assets/img/1280px-Wisconsin_in_United_States.svg.png" class="w-full mt-6 rounded-lg">
+                 <router-link to="" class="border rounded-lg py-3 px-4 mt-6 flex items-center gap-2"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pin-map text-primary" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+  <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+</svg>
+                  <p class="font-bold">View on the map</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right text-primary ml-auto" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+</svg>
+                 </router-link>
                 </div>
               </div>
             </div>
@@ -831,117 +1003,4 @@ export default {
 </script>
   
 <style>
-.swiper-button-next,
-.swiper-button-prev {
-  width: 50px;
-  height: 50px;
-  background-color: rgb(41, 151, 101);
-  border-radius: 100%;
-  transition: all 0.4s;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: #191f2d;
-}
-.swiper-button-next:active,
-.swiper-button-prev:active {
-  transform: scale(0.9);
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 12px;
-}
-input[type="range"] {
-  height: 46px;
-  -webkit-appearance: none;
-  margin: 10px 0;
-  width: 100%;
-}
-input[type="range"]:focus {
-  outline: none;
-}
-input[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 1px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 0px 0px 0px #299765;
-  background: #299765;
-  border-radius: 0px;
-  border: 1px solid #299765;
-}
-input[type="range"]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #ffffff;
-  border: 10px solid #299765;
-  height: 12px;
-  width: 12px;
-  border-radius: 50px;
-  background: #ffffff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -20px;
-}
-input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #299765;
-}
-input[type="range"]::-moz-range-track {
-  width: 100%;
-  height: 1px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 0px 0px 0px #299765;
-  background: #299765;
-  border-radius: 0px;
-  border: 1px solid #299765;
-}
-input[type="range"]::-moz-range-thumb {
-  box-shadow: 0px 0px 0px #ffffff;
-  border: 10px solid #299765;
-  height: 12px;
-  width: 12px;
-  border-radius: 50px;
-  background: #ffffff;
-  cursor: pointer;
-}
-input[type="range"]::-ms-track {
-  width: 100%;
-  height: 1px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-input[type="range"]::-ms-fill-lower {
-  background: #299765;
-  border: 1px solid #299765;
-  border-radius: 0px;
-  box-shadow: 0px 0px 0px #299765;
-}
-input[type="range"]::-ms-fill-upper {
-  background: #299765;
-  border: 1px solid #299765;
-  border-radius: 0px;
-  box-shadow: 0px 0px 0px #299765;
-}
-input[type="range"]::-ms-thumb {
-  margin-top: 1px;
-  box-shadow: 0px 0px 0px #ffffff;
-  border: 10px solid #299765;
-  height: 12px;
-  width: 12px;
-  border-radius: 50px;
-  background: #ffffff;
-  cursor: pointer;
-}
-input[type="range"]:focus::-ms-fill-lower {
-  background: #299765;
-}
-input[type="range"]:focus::-ms-fill-upper {
-  background: #299765;
-}
-.tab.active {
-  background-color: #299765;
-  color: white;
-}
 </style>
