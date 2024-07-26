@@ -1,6 +1,5 @@
 <template>
   <main>
-
     <!-- home details -->
     <section class="mt-16">
       <div class="container mx-auto px-5">
@@ -206,7 +205,7 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="bg-gray-200 h-4 mt-5 rounded-3xl">
+                  <div class="bg-gray-100 h-4 mt-5 rounded-3xl">
                     <div class="bg-primary w-10/12 h-full rounded-3xl"></div>
                   </div>
                   <div class="mt-3 flex items-center justify-between font-bold">
@@ -229,7 +228,7 @@
                   </div>
                 </div>
                 <div class="border-y py-5 mt-5">
-                  <div class="bg-gray-200 rounded-lg py-5 px-4">
+                  <div class="bg-gray-100 rounded-lg py-5 px-4">
                     <div class="flex items-center justify-between gap-3 mb-5">
                       <div
                         class="flex items-center justify-between gap-2 font-bold"
@@ -1192,10 +1191,10 @@
                   class="rounded-lg overflow-hidden p-4 bg-white -mt-3 flex items-start gap-4"
                 >
                   <div class="flex-grow text-right">
-                    <p class="font-bold text-lg">Have more questions about this property?</p>
-                    <p>
-                     Contact our real estate experts
+                    <p class="font-bold text-lg">
+                      Have more questions about this property?
                     </p>
+                    <p>Contact our real estate experts</p>
                   </div>
                   <img
                     alt="img"
@@ -1203,12 +1202,26 @@
                     class="block w-16 h-16 rounded-lg ml-auto"
                   />
                 </div>
-                <router-link to="" class="border rounded-lg p-3 flex items-center justify-center gap-2 mt-3"> 
+                <router-link
+                  to=""
+                  class="border rounded-lg p-3 flex items-center justify-center gap-2 mt-3"
+                >
                   <p class="font-bold text-lg">Message us</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-  <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-  <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
-</svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                    />
+                    <path
+                      d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"
+                    />
+                  </svg>
                 </router-link>
               </div>
             </div>
@@ -1217,13 +1230,219 @@
       </div>
     </section>
 
-     <!-- similar properties -->
-     <section class="mt-40 bg-gray-100 py-16"> 
-          <div class="container mx-auto px-5"> 
-            <h1 class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"> Similar Properties </h1>
-          </div>
+    <!-- similar properties -->
+    <section class="mt-40 bg-gray-100 py-16 relative">
+      <!-- shape -->
+      <div class="custom-shape-divider-top-1722016074">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+<!--  -->
+      <div class="container mx-auto px-5">
+        <h1
+          class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+        >
+          Similar Properties
+        </h1>
+        <div class="mt-12">
+          <!-- swiper -->
+          <swiper
+            :modules="modules"
+            :pagination="true"
+            :autoplay="{
+              delay: 4500,
+              disableOnInteraction: false,
+            }"
+            :slides-per-view="4"
+            :space-between="10"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide v-for="n in 5" :key="n">
+              <div class="rounded-xl overflow-hidden border">
+                <div
+                  class="bg-black flex items-center justify-center p-1 text-sm gap-2 text-white font-bold"
+                >
+                  <p>New Listing</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-stars text-primary"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
+                    />
+                  </svg>
+                </div>
+                <swiper
+                  :modules="modules"
+                  :pagination="true"
+                  :slides-per-view="1"
+                  :space-between="0"
+                  :autoplay="{
+                    delay: 3500,
+                    disableOnInteraction: false,
+                  }"
+                  @swiper="onSwiper"
+                  @slideChange="onSlideChange"
+                >
+                  <swiper-slide>
+                    <div>
+                      <img
+                        alt="bg"
+                        src="../assets/img/slide-1.jpg"
+                        class="w-full h-full"
+                      />
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div>
+                      <img
+                        alt="bg"
+                        src="../assets/img/slide-2.jpg"
+                        class="w-full h-full"
+                      />
+                    </div>
+                  </swiper-slide>
+                </swiper>
+                <div class="p-4 bg-white">
+                  <div class="flex items-center gap-2 text-gray-700 text-xs">
+                    <div class="flex items-center gap-1 font-semibold">
+                      <p class="flex gap-1">Dubai</p>
+                      <img
+                        alt="img"
+                        src="/src/assets/img/images.png"
+                        class="w-5 h-5 rounded-full flex-shrink-0"
+                      />
+                    </div>
+                    <span>|</span>
+                    <div class="flex items-center gap-1 font-semibold">
+                      <p class="flex gap-1">Rented</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-file-earmark-medical"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"
+                        />
+                        <path
+                          d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                        />
+                      </svg>
+                    </div>
+                    <span>|</span>
+                    <div class="flex items-center gap-1 font-semibold">
+                      <p class="flex gap-1">#1106</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-door-open"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"
+                        ></path>
+                        <path
+                          d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>|</span>
+                    <div class="flex items-center gap-1 font-semibold">
+                      <p class="flex gap-1">1</p>
+                      <svg
+                        id="Layer_1"
+                        width="18"
+                        height="18"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 33.69 30.32"
+                      >
+                        <g>
+                          <path
+                            id="Path_130"
+                            data-name="Path 130"
+                            d="M0,9.58H1.11V25.8h1.69V7.3c0-.84-.28-1.11-1.11-1.11h-.56v2.22H0v-2.68c0-.46,.2-.66,.66-.67H1.82c1.02-.07,1.92,.64,2.08,1.65,.01,.06,.03,.11,.03,.12,.55-.03,1.08-.08,1.61-.07,.97,0,1.78,.73,1.9,1.69,.26,2,.52,4.01,.75,6.01,.02,.42,0,.84-.05,1.25h1.4v-.46c-.04-.31,.19-.6,.5-.64,.04,0,.08,0,.12,0H27.63c.75-.13,1.45,.38,1.58,1.12h.78c1.08-.02,1.97,.84,1.99,1.92,0,.02,0,.03,0,.05,.01,.93,.01,1.87,0,2.8-.02,.27-.06,.54-.12,.81,0,.01,.02,.02,.03,.03,1.1,.11,1.9,1.09,1.79,2.19,0,.02,0,.04,0,.06v5.93c0,.64-.17,.81-.81,.8-.55,.02-1.1,0-1.64-.06-1.2-.17-2.2-.99-2.6-2.14-.04-.11-.08-.22-.12-.33q-.28-.84-1.18-.84c-.47,0-.94,0-1.4,0-.03,0-.06-.02-.08-.03v-1.07h6.7c0-.92,.02-1.81-.01-2.69-.05-.38-.36-.67-.74-.69-.1,0-.21-.01-.31,0H3.96v3.36H24.68v1.13h-.41c-6.14,0-12.27,0-18.41,0-.31,0-.46,.08-.53,.39-.07,.28-.17,.56-.28,.83-.49,1.28-1.71,2.14-3.08,2.16-.43,0-.86,0-1.3,0-.46,0-.66-.21-.67-.67V9.57h-.01Zm3.94,11.77H30.06c.44-.01,.8-.37,.8-.82,.02-.95,.01-1.89,0-2.84,0-.41-.29-.75-.69-.81-.33-.02-.66-.02-.99,0v2.66c0,.48-.2,.69-.67,.69H10.21c-.46,0-.66-.21-.66-.67,0-.78,0-1.57,0-2.35v-.33H3.95v4.47Zm10.09-2.27h14.01c0-.98-.02-1.94,0-2.9,0-.35-.09-.45-.45-.45-4.41,.01-8.81,.01-13.22,0h-.35v3.34ZM3.93,15.69s.07,.02,.11,.03h1.96c.86,0,1.18-.34,1.07-1.18-.23-1.9-.47-3.8-.71-5.69-.1-.76-.36-.98-1.13-.98h-.28c-.72,0-1.03,.31-1.03,1.02v6.8Zm6.76,.05v3.32h2.22v-3.32h-2.22ZM1.14,29.17c1.32,.34,2.67-.44,3.01-1.76,.04-.14,.06-.29,.07-.44H1.14v2.2Zm31.39-2.2h-3.09c.12,1.36,1.31,2.37,2.68,2.25,.14-.01,.28-.04,.42-.07v-2.18Z"
+                          ></path>
+                          <path
+                            id="Path_131"
+                            data-name="Path 131"
+                            d="M27.58,2.59c-.15,.19-.23,.42-.38,.48-.82,.34-1.48,.99-1.82,1.81-.11,.26-.42,.39-.68,.28-.12-.05-.22-.15-.28-.28-.34-.82-.99-1.47-1.82-1.81-.26-.12-.38-.42-.26-.68,.05-.12,.16-.22,.28-.27,.81-.34,1.45-.98,1.79-1.79,.11-.27,.41-.4,.68-.29,.13,.05,.24,.16,.29,.29,.33,.81,.98,1.46,1.79,1.79,.15,.07,.24,.29,.39,.48Zm-1.95,.01l-.72-.72-.72,.71,.72,.73,.73-.72Z"
+                          ></path>
+                          <path
+                            id="Path_132"
+                            data-name="Path 132"
+                            d="M17.05,4.85c-.18,.21-.27,.43-.44,.5-.79,.32-1.42,.95-1.74,1.74-.1,.28-.4,.42-.68,.33-.16-.05-.28-.18-.33-.33-.33-.79-.96-1.41-1.74-1.74-.28-.1-.42-.41-.31-.69,.06-.15,.18-.27,.34-.32,.78-.32,1.4-.94,1.72-1.72,.09-.28,.39-.44,.68-.35,.17,.05,.3,.19,.35,.35,.32,.78,.94,1.4,1.72,1.71,.17,.07,.28,.31,.45,.51Zm-2.69,.72l.73-.72-.72-.72-.72,.72,.72,.72Z"
+                          ></path>
+                          <path
+                            id="Path_133"
+                            data-name="Path 133"
+                            d="M21.2,8.22c.21,.17,.45,.26,.52,.42,.32,.8,.96,1.44,1.76,1.77,.46,.2,.43,.73,0,1,0,0-.02,.01-.03,.02-.79,.3-1.41,.92-1.72,1.71-.1,.28-.4,.43-.68,.34-.16-.06-.29-.19-.34-.35-.32-.77-.93-1.37-1.69-1.69-.29-.09-.45-.39-.37-.68,.05-.18,.19-.32,.37-.37,.77-.31,1.38-.93,1.69-1.7,.08-.17,.3-.28,.5-.46Zm.74,2.68l-.71-.73-.72,.72,.71,.73,.72-.73Z"
+                          ></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <h1 class="font-bold leading-5 mt-3">
+                    1 Bed in The Links East, The Greens and Views
+                  </h1>
+                  <div>
+                    <div class="mt-3 flex items-center justify-between">
+                      <div
+                        class="flex items-center text-gray-500 font-semibold"
+                      >
+                        <p>89% funded</p>
+                      </div>
+                      <div class="text-primary font-bold text-lg">
+                        <span class="text-xs">AED</span> 221,934
+                      </div>
+                    </div>
+                    <div class="bg-gray-100 h-2 mt-3 rounded-3xl">
+                      <div class="bg-primary w-10/12 h-full rounded-3xl"></div>
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-2 mt-4 text-sm">
+                      <div class="flex items-center justify-between gap-3 mb-2">
+                        <div
+                          class="flex items-center justify-between gap-2 font-bold"
+                        >
+                          <p>48.65%</p>
+                        </div>
+                        <p class="text-gray-700">5 year total return</p>
+                      </div>
+                      <div class="flex items-center justify-between gap-3 mb-2">
+                        <div
+                          class="flex items-center justify-between gap-2 font-bold"
+                        >
+                          <p>9.73%</p>
+                        </div>
+                        <p class="text-gray-700">Yearly investment return</p>
+                      </div>
+                      <div class="flex items-center justify-between gap-3">
+                        <div
+                          class="flex items-center justify-between gap-2 font-bold"
+                        >
+                          <p>5.53%</p>
+                        </div>
+                        <p class="text-gray-700">Projected net yield</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper>
+        </div>
+      </div>
     </section>
-
   </main>
 </template>
   

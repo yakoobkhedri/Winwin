@@ -10,7 +10,9 @@
   font-weight: 700;
   src: url("./fonts/woff/IRANSansXFaNum-Bold.woff") format("woff"); */
 }
-
+body{
+  overflow-x: hidden;
+}
 .swiper-button-next,
 .swiper-button-prev {
   width: 50px!important;
@@ -131,4 +133,24 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .timeline.active > div:last-child{
   @apply bg-white ring-primary
+}
+.custom-shape-divider-top-1722016074 {
+  position: absolute;
+  top: -149px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotateX(163deg);
+}
+
+.custom-shape-divider-top-1722016074 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 153px;
+}
+
+.custom-shape-divider-top-1722016074 .shape-fill {
+  fill: #F3F4F6;
 }
