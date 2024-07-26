@@ -1,8 +1,10 @@
 <template>
   <main>
+
     <!-- home details -->
     <section class="mt-16">
       <div class="container mx-auto px-5">
+        <!-- title -->
         <div class="flex items-start justify-between gap-4 mb-16">
           <div class="border-l-4 border-primary pl-8">
             <h1 class="font-bold text-4xl">
@@ -24,6 +26,7 @@
             </p>
           </div>
         </div>
+        <!-- swiper -->
         <swiper
           :modules="modules"
           :navigation="true"
@@ -56,6 +59,7 @@
             </div>
           </swiper-slide>
         </swiper>
+        <!-- details -->
         <div>
           <div class="flex items-center gap-3 py-5 text-gray-600 border-b mb-8">
             <div class="flex items-center gap-1 font-semibold">
@@ -821,74 +825,405 @@
                   </div>
                 </div>
               </div>
-              <div class="mt-8 border-b pb-6"> 
-                 <div class="border rounded-lg overflow-hidden"> 
-                  <div class="font-bold text-center p-3 bg-gray-100">Exit options</div>
-                  <div class="p-4"> 
-                    <div class="border-b pb-6"> 
-                      <div class="flex items-center justify-between"> 
-                      <p class="font-bold">Exit window</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-windows text-yellow-600" viewBox="0 0 16 16">
-  <path d="M6.555 1.375 0 2.237v5.45h6.555zM0 13.795l6.555.933V8.313H0zm7.278-5.4.026 6.378L16 16V8.395zM16 0 7.33 1.244v6.414H16z"/>
-</svg>
+              <div class="mt-8 border-b pb-6">
+                <div class="border rounded-lg overflow-hidden">
+                  <div class="font-bold text-center p-3 bg-gray-100">
+                    Exit options
+                  </div>
+                  <div class="p-4">
+                    <div class="border-b pb-6">
+                      <div class="flex items-center justify-between">
+                        <p class="font-bold">Exit window</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-windows text-yellow-600"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.555 1.375 0 2.237v5.45h6.555zM0 13.795l6.555.933V8.313H0zm7.278-5.4.026 6.378L16 16V8.395zM16 0 7.33 1.244v6.414H16z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="mt-2">
+                        Exit the property early after 1 year by selling shares
+                        in our biannual Exit Window.
+                      </p>
+                      <router-link
+                        to=""
+                        class="flex items-center justify-end gap-3 mt-4 text-primary font-bold"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-chevron-left"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+                          />
+                        </svg>
+                        <p>Explore exit windows</p>
+                      </router-link>
                     </div>
-                    <p class="mt-2"> 
-                      Exit the property early after 1 year by selling shares in our biannual Exit Window.
+                    <p
+                      class="table justify-center bg-gray-200 text-gray-700 -mt-3 font-bold mx-auto rounded-full px-4"
+                    >
+                      OR
                     </p>
-                    <router-link to="" class="flex items-center justify-end gap-3 mt-4 text-primary font-bold">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-</svg>
-                     <p>Explore exit windows</p>
-                    </router-link>
-                    </div>
-                    <p class="table justify-center bg-gray-200 text-gray-700 -mt-3 font-bold mx-auto rounded-full px-4">OR</p>
-                    <div class="mt-7"> 
-                      <div class="flex items-center justify-between"> 
-                      <p class="font-bold">Full sale of property</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill text-yellow-600" viewBox="0 0 16 16">
-  <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
-</svg>
-                    </div>
-                    <p class="mt-2"> 
-                      Exit the property early after 1 year by selling shares in our biannual Exit Window.
-                    </p>
+                    <div class="mt-7">
+                      <div class="flex items-center justify-between">
+                        <p class="font-bold">Full sale of property</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-pencil-fill text-yellow-600"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="mt-2">
+                        Exit the property early after 1 year by selling shares
+                        in our biannual Exit Window.
+                      </p>
                     </div>
                   </div>
-                 </div>
+                </div>
               </div>
-              <div class="mt-8 border-b pb-6"> 
+              <div class="mt-8 border-b pb-6">
                 <h1
                   class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
                 >
                   Location
                 </h1>
                 <div class="mt-12">
-                 <div class="flex items-center gap-2"> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt text-primary flex-shrink-0" viewBox="0 0 16 16">
-  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-</svg>
-                   <p>The Greens and Views, Dubai, United Arab Emirates</p>
-                 </div>
-                 <img alt="img" src="../assets/img/1280px-Wisconsin_in_United_States.svg.png" class="w-full mt-6 rounded-lg">
-                 <router-link to="" class="border rounded-lg py-3 px-4 mt-6 flex items-center gap-2"> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pin-map text-primary" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
-  <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-</svg>
-                  <p class="font-bold">View on the map</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right text-primary ml-auto" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-</svg>
-                 </router-link>
+                  <div class="flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-geo-alt text-primary flex-shrink-0"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                      />
+                      <path
+                        d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                      />
+                    </svg>
+                    <p>The Greens and Views, Dubai, United Arab Emirates</p>
+                  </div>
+                  <img
+                    alt="img"
+                    src="../assets/img/1280px-Wisconsin_in_United_States.svg.png"
+                    class="w-full mt-6 rounded-lg"
+                  />
+                  <router-link
+                    to=""
+                    class="border rounded-lg py-3 px-4 mt-6 flex items-center gap-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-pin-map text-primary"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"
+                      />
+                    </svg>
+                    <p class="font-bold">View on the map</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-chevron-right text-primary ml-auto"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </router-link>
+                  <p class="mt-8">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia Curae; Donec velit neque, auctor
+                    sit amet aliquam vel, ullamcorper sit amet ligula. Cras
+                    ultricies ligula sed magna dictum porta. Curabitur aliquet
+                    quam id dui posuere blandit. Mauris blandit aliquet elit,
+                    eget tincidunt nibh pulvinar quam id dui posuere blandit.
+                  </p>
                 </div>
+              </div>
+              <div class="mt-8 border-b pb-6">
+                <div class="border rounded-lg overflow-hidden">
+                  <div
+                    class="flex items-center justify-between gap-3 bg-yellow-400 pt-1 pb-5 px-4 text-sm font-bold"
+                  >
+                    <p>8 mins</p>
+                    <div class="flex items-center gap-2">
+                      <p>Stake Academy</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-layers-half"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zM8 9.433 1.562 6 8 2.567 14.438 6z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="rounded-lg overflow-hidden p-4 bg-white -mt-3 flex items-center gap-4"
+                  >
+                    <router-link to="" class="flex-shrink-0">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="44"
+                        height="44"
+                        fill="currentColor"
+                        class="bi bi-play-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                        />
+                      </svg>
+                    </router-link>
+                    <div class="flex-grow">
+                      <p class="font-bold text-lg">Properties on Stake</p>
+                      <p>
+                        Remi explains how our experts source and manage
+                        properties
+                      </p>
+                    </div>
+                    <img
+                      alt="img"
+                      src="../assets/img/Person.jpg"
+                      class="block w-16 h-16 rounded-full ml-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 border-b pb-6">
+                <h1
+                  class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+                >
+                  Documents (4)
+                </h1>
+                <div class="mt-12">
+                  <router-link
+                    to=""
+                    class="flex items-center gap-3 border rounded-lg p-4 mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-file-earmark-pdf text-primary flex-shrink-0"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                      />
+                      <path
+                        d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                      />
+                    </svg>
+                    <p class="font-bold text-lg">
+                      Investor Memo - The Links East T...
+                    </p>
+                    <p class="opacity-70 ml-auto">PDF</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </router-link>
+                  <router-link
+                    to=""
+                    class="flex items-center gap-3 border rounded-lg p-4 mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-file-earmark-pdf text-primary flex-shrink-0"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                      />
+                      <path
+                        d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                      />
+                    </svg>
+                    <p class="font-bold text-lg">
+                      Investor Memo - The Links East T...
+                    </p>
+                    <p class="opacity-70 ml-auto">PDF</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </router-link>
+                  <router-link
+                    to=""
+                    class="flex items-center gap-3 border rounded-lg p-4 mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-file-earmark-pdf text-primary flex-shrink-0"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                      />
+                      <path
+                        d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                      />
+                    </svg>
+                    <p class="font-bold text-lg">
+                      Investor Memo - The Links East T...
+                    </p>
+                    <p class="opacity-70 ml-auto">PDF</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </router-link>
+                  <router-link
+                    to=""
+                    class="flex items-center gap-3 border rounded-lg p-4 mb-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      fill="currentColor"
+                      class="bi bi-file-earmark-pdf text-primary flex-shrink-0"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                      />
+                      <path
+                        d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
+                      />
+                    </svg>
+                    <p class="font-bold text-lg">
+                      Investor Memo - The Links East T...
+                    </p>
+                    <p class="opacity-70 ml-auto">PDF</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                      />
+                    </svg>
+                  </router-link>
+                </div>
+              </div>
+              <div class="mt-8 border-b pb-6">
+                <div
+                  class="rounded-lg overflow-hidden p-4 bg-white -mt-3 flex items-start gap-4"
+                >
+                  <div class="flex-grow text-right">
+                    <p class="font-bold text-lg">Have more questions about this property?</p>
+                    <p>
+                     Contact our real estate experts
+                    </p>
+                  </div>
+                  <img
+                    alt="img"
+                    src="/src/assets/img/Person.jpg"
+                    class="block w-16 h-16 rounded-lg ml-auto"
+                  />
+                </div>
+                <router-link to="" class="border rounded-lg p-3 flex items-center justify-center gap-2 mt-3"> 
+                  <p class="font-bold text-lg">Message us</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+  <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+  <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+</svg>
+                </router-link>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+     <!-- similar properties -->
+     <section class="mt-40 bg-gray-100 py-16"> 
+          <div class="container mx-auto px-5"> 
+            <h1 class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"> Similar Properties </h1>
+          </div>
+    </section>
+
   </main>
 </template>
   
