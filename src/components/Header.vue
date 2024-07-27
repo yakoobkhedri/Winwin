@@ -1,5 +1,8 @@
 <template>
-  <header>
+  <!-- overlay -->
+   <div @click="activeMenu =! activeMenu" :class="{'visible opacity-40': activeMenu ,'invisible opacity-0': !activeMenu}" class="bg-black transition-all fixed inset-0 z-30"></div>
+  <!--  -->
+  <header class="shadow">
     <div class="border-b py-3 px-5 hidden sm:block">
       <div class="container mx-auto px-5 flex items-center justify-between">
         <div class="flex items-center gap-7 text-sm [&>*]:cursor-pointer">
@@ -101,7 +104,7 @@
         <img alt="logo" src="../assets/img/logo.png" class="w-20 mx-auto" />
       </a>
     </div>
-    <div class="py-7 bg-primary md:bg-white px-5">
+    <div class="md:py-4 py-2 bg-primary md:bg-white px-5">
       <div class="container mx-auto px-5 flex items-center justify-between md:justify-end lg:justify-center relative">
         <div
           class="md:flex hidden items-center gap-7 text-sm [&>*]:cursor-pointer"
@@ -111,19 +114,19 @@
             <img alt="logo" src="../assets/img/logo.png" class="w-24" />
           </a>
         </div>
-        <div
-          class="md:flex hidden items-center gap-5 [&>*]:cursor-pointer font-medium text-xl"
+        <div :class="{'active': activeMenu}"
+          class="flex flex-col md:flex-row fixed md:static bg-[#070824] sidebar w-60 md:w-auto md:bg-transparent transition-all z-40 p-6 md:p-0 -left-64 top-0 bottom-0 h-full items-center gap-5 [&>*]:cursor-pointer font-medium text-xl"
         >
-          <a class="transition-all hover:text-primary">Home</a>
-          <a class="transition-all hover:text-primary">About</a>
-          <a class="transition-all hover:text-primary">Service</a>
-          <a class="transition-all hover:text-primary">Blog</a>
-          <a class="transition-all hover:text-primary">Contact</a>
+          <a class="transition-all hover:text-primary w-full md:w-auto text-white md:text-black">Home</a>
+          <a class="transition-all hover:text-primary w-full md:w-auto text-white md:text-black">About</a>
+          <a class="transition-all hover:text-primary w-full md:w-auto text-white md:text-black">Service</a>
+          <a class="transition-all hover:text-primary w-full md:w-auto text-white md:text-black">Blog</a>
+          <a class="transition-all hover:text-primary w-full md:w-auto text-white md:text-black">Contact</a>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-6 h-6"
+            class="w-6 h-6 hidden md:block"
           >
             <path
               fill-rule="evenodd"
@@ -132,13 +135,13 @@
             />
           </svg>
           <a
-            class="font-medium flex items-center justify-center text-lg text-white bg-primary rounded-[30px] w-40 h-14 transition-all hover:bg-[#191f2d]"
+            class="font-medium flex items-center justify-center text-lg text-white bg-primary rounded-[30px] w-full md:w-40 h-14 transition-all hover:bg-[#191f2d]"
           >
             Get a Support
           </a>
         </div>
         <h4 class="text-lg text-white font-bold md:hidden">MENU</h4>
-        <div class="md:hidden cursor-pointer">
+        <div @click="activeMenu = !activeMenu" class="md:hidden cursor-pointer active:scale-95">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="34"
@@ -159,9 +162,17 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+
 export default {
   name: "Header",
-  setup() {},
+  setup() {
+    const activeMenu = ref(false);
+    
+    return {
+      activeMenu
+    }
+  },
 };
 </script>
 

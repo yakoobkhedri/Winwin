@@ -13,6 +13,9 @@
 body{
   overflow-x: hidden;
 }
+.sidebar.active{
+  left: 0;
+}
 .swiper-button-next,
 .swiper-button-prev {
   width: 50px!important;
@@ -152,4 +155,11 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .custom-shape-divider-top-1722016074 .shape-fill {
   fill: #F3F4F6;
+}
+
+@media screen and (max-width: 992px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+   display: none!important;
+  }
 }

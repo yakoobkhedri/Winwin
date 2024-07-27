@@ -179,7 +179,7 @@
               </svg>
             </div>
           </div>
-          <div class="grid grid-cols-12 gap-10">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-6 lg:gap-y-0 lg:gap-x-10">
             <div class="lg:col-span-4 col-span-12">
               <div class="sticky top-7">
                 <div class="flex items-center gap-1">
@@ -328,7 +328,7 @@
                       width="44"
                       height="36"
                       fill="currentColor"
-                      class="bi bi-graph-up-arrow"
+                      class="bi bi-graph-up-arrow flex-shrink-0"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -343,7 +343,7 @@
             <div class="lg:col-span-8 col-span-12">
               <div>
                 <h1
-                  class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+                  class="text-2xl sm:text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
                 >
                   Property Description
                 </h1>
@@ -364,7 +364,7 @@
               </div>
               <div class="mt-8">
                 <h1
-                  class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+                  class="text-2xl sm:text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
                 >
                   Amenities
                 </h1>
@@ -521,7 +521,7 @@
               </div>
               <div class="mt-8">
                 <h1
-                  class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+                  class="text-2xl sm:text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
                 >
                   investment calculator
                 </h1>
@@ -534,7 +534,7 @@
                         width="20"
                         height="20"
                         fill="currentColor"
-                        class="bi bi-question-circle cursor-pointer"
+                        class="bi bi-question-circle cursor-pointer flex-shrink-0"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -590,7 +590,7 @@
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-info-circle"
+                    class="bi bi-info-circle flex-shrink-0"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -605,7 +605,7 @@
               </div>
               <div class="mt-8">
                 <h1
-                  class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+                  class="text-2xl sm:text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
                 >
                   Financials
                 </h1>
@@ -669,7 +669,7 @@
                             width="16"
                             height="16"
                             fill="currentColor"
-                            class="bi bi-info-circle"
+                            class="bi bi-info-circle flex-shrink-0"
                             viewBox="0 0 16 16"
                           >
                             <path
@@ -730,7 +730,7 @@
               </div>
               <div class="mt-8 border-b pb-6">
                 <h1
-                  class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+                  class="text-2xl sm:text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
                 >
                   Funding timeline
                 </h1>
@@ -755,7 +755,7 @@
                         </p>
                       </div>
                       <div
-                        class="w-3 h-3 rounded-full ring-4 ring-gray-300 relative z-1 bg-gray-500 mt-2"
+                        class="w-3 h-3 rounded-full ring-4 ring-gray-300 flex-shrink-0 relative z-1 bg-gray-500 mt-2"
                       ></div>
                     </div>
                     <div
@@ -772,7 +772,7 @@
                         </p>
                       </div>
                       <div
-                        class="w-3 h-3 rounded-full ring-4 ring-gray-300 relative z-1 bg-gray-500 mt-2"
+                        class="w-3 h-3 rounded-full ring-4 ring-gray-300 flex-shrink-0 relative z-1 bg-gray-500 mt-2"
                       ></div>
                     </div>
                     <div class="flex items-start justify-end timeline gap-4">
@@ -822,7 +822,7 @@
                         </p>
                       </div>
                       <div
-                        class="w-3 h-3 rounded-full ring-4 ring-gray-300 relative z-1 bg-gray-500 mt-2"
+                        class="w-3 h-3 rounded-full ring-4 ring-gray-300 flex-shrink-0 relative z-1 bg-gray-500 mt-2"
                       ></div>
                     </div>
                   </div>
@@ -905,7 +905,7 @@
               </div>
               <div class="mt-8 border-b pb-6">
                 <h1
-                  class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+                  class="text-2xl sm:text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
                 >
                   Location
                 </h1>
@@ -1010,7 +1010,7 @@
                         width="44"
                         height="44"
                         fill="currentColor"
-                        class="bi bi-play-circle-fill"
+                        class="bi bi-play-circle-fill flex-shrink-0"
                         viewBox="0 0 16 16"
                       >
                         <path
@@ -1020,7 +1020,7 @@
                     </router-link>
                     <div class="flex-grow">
                       <p class="font-bold text-lg">Properties on Stake</p>
-                      <p>
+                      <p class="text-sm sm:text-base">
                         Remi explains how our experts source and manage
                         properties
                       </p>
@@ -1035,7 +1035,7 @@
               </div>
               <div class="mt-8 border-b pb-6">
                 <h1
-                  class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+                  class="text-2xl sm:text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
                 >
                   Documents (4)
                 </h1>
@@ -1059,7 +1059,7 @@
                         d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
                       />
                     </svg>
-                    <p class="font-bold text-lg">
+                    <p class="font-bold sm:text-lg">
                       Investor Memo - The Links East T...
                     </p>
                     <p class="opacity-70 ml-auto">PDF</p>
@@ -1096,7 +1096,7 @@
                         d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
                       />
                     </svg>
-                    <p class="font-bold text-lg">
+                    <p class="font-bold sm:text-lg">
                       Investor Memo - The Links East T...
                     </p>
                     <p class="opacity-70 ml-auto">PDF</p>
@@ -1133,7 +1133,7 @@
                         d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
                       />
                     </svg>
-                    <p class="font-bold text-lg">
+                    <p class="font-bold sm:text-lg">
                       Investor Memo - The Links East T...
                     </p>
                     <p class="opacity-70 ml-auto">PDF</p>
@@ -1170,7 +1170,7 @@
                         d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"
                       />
                     </svg>
-                    <p class="font-bold text-lg">
+                    <p class="font-bold sm:text-lg">
                       Investor Memo - The Links East T...
                     </p>
                     <p class="opacity-70 ml-auto">PDF</p>
@@ -1245,7 +1245,7 @@
 <!--  -->
       <div class="container mx-auto px-5">
         <h1
-          class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
+          class="text-2xl sm:text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
         >
           Similar Properties
         </h1>
@@ -1253,12 +1253,22 @@
           <!-- swiper -->
           <swiper
             :modules="modules"
-            :pagination="true"
             :autoplay="{
               delay: 4500,
               disableOnInteraction: false,
             }"
-            :slides-per-view="4"
+            :slides-per-view="1"
+            :breakpoints="{
+        '576': {
+          slidesPerView: 2,
+        },
+        '992': {
+          slidesPerView: 3,
+        },
+        '1200': {
+          slidesPerView: 4,
+        },
+      }"
             :space-between="10"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
@@ -1314,7 +1324,7 @@
                   </swiper-slide>
                 </swiper>
                 <div class="p-4 bg-white">
-                  <div class="flex items-center gap-2 opacity-80 text-xs">
+                  <div class="flex flex-wrap items-center gap-2 opacity-80 text-xs">
                     <div class="flex items-center gap-1 font-semibold">
                       <p class="flex gap-1">Dubai</p>
                       <img
