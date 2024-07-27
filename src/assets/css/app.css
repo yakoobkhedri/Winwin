@@ -36,7 +36,6 @@ body{
 input[type="range"] {
   height: 46px!important;
   -webkit-appearance: none!important;
-  margin: 10px 0!important;
   width: 100%!important;
 }
 input[type="range"]:focus {

@@ -4,14 +4,14 @@
     <section class="mt-16">
       <div class="container mx-auto px-5">
         <!-- title -->
-        <div class="flex items-start justify-between gap-4 mb-16">
-          <div class="border-l-4 border-primary pl-8">
-            <h1 class="font-bold text-4xl">
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-4 mb-8 sm:mb-16">
+          <div class="border-l-4 border-primary sm:pl-8 pl-4">
+            <h1 class="font-bold text-2xl sm:text-4xl">
               1 Bed in The Links East, The Greens and Views
             </h1>
             <p class="text-xl mt-3">Chicago, IL 606543</p>
           </div>
-          <div class="flex items-center gap-1 font-bold">
+          <div class="flex flex-wrap order-first lg:order-last items-center gap-1 font-bold">
             <router-link class="transition-all hover:text-primary" to=""
               >Home</router-link
             >
@@ -60,7 +60,7 @@
         </swiper>
         <!-- details -->
         <div>
-          <div class="flex items-center gap-3 py-5 text-gray-600 border-b mb-8">
+          <div class="flex flex-wrap items-center gap-3 py-5 opacity-70 border-b mb-8">
             <div class="flex items-center gap-1 font-semibold">
               <p class="flex gap-1">758 <span>sq.ft</span></p>
               <svg
@@ -180,7 +180,7 @@
             </div>
           </div>
           <div class="grid grid-cols-12 gap-10">
-            <div class="col-span-4">
+            <div class="lg:col-span-4 col-span-12">
               <div class="sticky top-7">
                 <div class="flex items-center gap-1">
                   <p>purchase price</p>
@@ -302,7 +302,7 @@
                 </div>
                 <div class="py-5 mt-5">
                   <div class="flex items-start gap-3 text-right mb-6">
-                    <div>
+                    <div class="flex-grow">
                       <p class="font-bold">The Greens and Views, Dubai</p>
                       <p class="text-sm mt-1">
                         A green community at the centre of the city, with a
@@ -316,7 +316,7 @@
                     />
                   </div>
                   <div class="flex items-start gap-3 text-right">
-                    <div>
+                    <div class="flex-grow">
                       <p class="font-bold">The Greens and Views, Dubai</p>
                       <p class="text-sm mt-1">
                         A green community at the centre of the city, with a
@@ -340,7 +340,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-8">
+            <div class="lg:col-span-8 col-span-12">
               <div>
                 <h1
                   class="text-3xl font-bold after:absolute after:h-1 after:w-24 after:bg-primary after:left-0 after:-bottom-4 relative"
@@ -368,7 +368,7 @@
                 >
                   Amenities
                 </h1>
-                <div class="mt-12 grid grid-cols-3 gap-4">
+                <div class="mt-12 grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">
                   <div class="flex items-center gap-3 text-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -525,7 +525,7 @@
                 >
                   investment calculator
                 </h1>
-                <div class="flex items-center gap-2 mt-8 text-lg">
+                <div class="flex flex-wrap items-center gap-2 mt-8 text-lg">
                   <p class="opacity-80 flex items-center gap-2">
                     Projected investment return of
                     <span class="flex items-center gap-2">
@@ -613,75 +613,78 @@
                   <div
                     class="shadow rounded-3xl p-2 flex items-center gap-1 text-center font-bold"
                   >
-                    <button class="flex-grow tab rounded-3xl py-2 active">
+                    <button @click="selectTab(1)" :class="{'active': selectedTab===1}" class="flex-grow w-1/2 tab rounded-3xl py-2 hover:bg-primary hover:text-white transition-all">
                       Annual Income
                     </button>
-                    <button class="flex-grow tab rounded-3xl py-2">
+                    <button @click="selectTab(2)" :class="{'active': selectedTab===2}" class="flex-grow w-1/2 tab rounded-3xl py-2 hover:bg-primary hover:text-white transition-all">
                       Asquisition
                     </button>
                   </div>
                   <div class="border-b pb-5">
-                    <div>
-                      <div class="py-5 border-b">
-                        <div
-                          class="flex items-center justify-between gap-3 mb-5"
-                        >
+                    <transition name="fade"> 
+                      <div v-show="selectedTab===1">
+                        <div class="py-5 border-b">
+                          <div
+                            class="flex items-center justify-between gap-3 mb-5"
+                          >
+                            <div
+                              class="flex items-center justify-between gap-2 font-bold"
+                            >
+                              <p>AED 118,750</p>
+                            </div>
+                            <p class="text-gray-700">Gross rent</p>
+                          </div>
+                          <div
+                            class="flex items-center justify-between gap-3 mb-5"
+                          >
+                            <div
+                              class="flex items-center justify-between gap-2 font-bold"
+                            >
+                              <p>(AED 7,370)</p>
+                            </div>
+                            <p class="text-gray-700">Service charges</p>
+                          </div>
+                          <div class="flex items-center justify-between gap-3">
+                            <div
+                              class="flex items-center justify-between gap-2 font-bold"
+                            >
+                              <p>(AED 16,431)</p>
+                            </div>
+                            <p class="text-gray-700">Mgmt. and maintenance</p>
+                          </div>
+                        </div>
+                        <div class="flex items-center justify-between gap-3 py-4">
                           <div
                             class="flex items-center justify-between gap-2 font-bold"
                           >
-                            <p>AED 118,750</p>
+                            <p class="text-primary">AED 94.949</p>
                           </div>
-                          <p class="text-gray-700">Gross rent</p>
+                          <p class="text-gray-700">Net Income</p>
                         </div>
                         <div
-                          class="flex items-center justify-between gap-3 mb-5"
+                          class="flex items-center mt-5 bg-gray-100 p-2 rounded-lg justify-center opacity-70 gap-2 font-bold"
                         >
-                          <div
-                            class="flex items-center justify-between gap-2 font-bold"
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-info-circle"
+                            viewBox="0 0 16 16"
                           >
-                            <p>(AED 7,370)</p>
-                          </div>
-                          <p class="text-gray-700">Service charges</p>
-                        </div>
-                        <div class="flex items-center justify-between gap-3">
-                          <div
-                            class="flex items-center justify-between gap-2 font-bold"
-                          >
-                            <p>(AED 16,431)</p>
-                          </div>
-                          <p class="text-gray-700">Mgmt. and maintenance</p>
+                            <path
+                              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                            ></path>
+                            <path
+                              d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                            ></path>
+                          </svg>
+                          <p>This is an estimate for the 1st year of ownership</p>
                         </div>
                       </div>
-                      <div class="flex items-center justify-between gap-3 py-4">
-                        <div
-                          class="flex items-center justify-between gap-2 font-bold"
-                        >
-                          <p class="text-primary">AED 94.949</p>
-                        </div>
-                        <p class="text-gray-700">Net Income</p>
-                      </div>
-                      <div
-                        class="flex items-center mt-5 bg-gray-100 p-2 rounded-lg justify-center opacity-70 gap-2 font-bold"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-info-circle"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
-                          ></path>
-                          <path
-                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
-                          ></path>
-                        </svg>
-                        <p>This is an estimate for the 1st year of ownership</p>
-                      </div>
-                    </div>
-                    <div class="hidden">
+                    </transition>
+                    <transition name="fade"> 
+                    <div v-show="selectedTab===2">
                       <div class="py-5 border-b">
                         <div
                           class="flex items-center justify-between gap-3 mb-5"
@@ -721,6 +724,7 @@
                         <p class="text-gray-700">Investment cost</p>
                       </div>
                     </div>
+                    </transition>
                   </div>
                 </div>
               </div>
@@ -852,7 +856,7 @@
                       </p>
                       <router-link
                         to=""
-                        class="flex items-center justify-end gap-3 mt-4 text-primary font-bold"
+                        class="flex items-center justify-end gap-3 hover:opacity-70 mt-4 text-primary font-bold"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -931,7 +935,7 @@
                   />
                   <router-link
                     to=""
-                    class="border rounded-lg py-3 px-4 mt-6 flex items-center gap-2"
+                    class="border rounded-lg hover:opacity-70 py-3 px-4 mt-6 flex items-center gap-2"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1000,7 +1004,7 @@
                   <div
                     class="rounded-lg overflow-hidden p-4 bg-white -mt-3 flex items-center gap-4"
                   >
-                    <router-link to="" class="flex-shrink-0">
+                    <router-link to="" class="flex-shrink-0 hover:scale-105">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="44"
@@ -1038,7 +1042,7 @@
                 <div class="mt-12">
                   <router-link
                     to=""
-                    class="flex items-center gap-3 border rounded-lg p-4 mb-3"
+                    class="flex items-center gap-3 border rounded-lg p-4 hover:opacity-70 mb-3"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1075,7 +1079,7 @@
                   </router-link>
                   <router-link
                     to=""
-                    class="flex items-center gap-3 border rounded-lg p-4 mb-3"
+                    class="flex items-center gap-3 border rounded-lg p-4 hover:opacity-70 mb-3"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1112,7 +1116,7 @@
                   </router-link>
                   <router-link
                     to=""
-                    class="flex items-center gap-3 border rounded-lg p-4 mb-3"
+                    class="flex items-center gap-3 border rounded-lg p-4 hover:opacity-70 mb-3"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1149,7 +1153,7 @@
                   </router-link>
                   <router-link
                     to=""
-                    class="flex items-center gap-3 border rounded-lg p-4 mb-3"
+                    class="flex items-center gap-3 border rounded-lg p-4 hover:opacity-70 mb-3"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1204,7 +1208,7 @@
                 </div>
                 <router-link
                   to=""
-                  class="border rounded-lg p-3 flex items-center justify-center gap-2 mt-3"
+                  class="border rounded-lg hover:text-primary p-3 flex items-center justify-center gap-2 mt-3"
                 >
                   <p class="font-bold text-lg">Message us</p>
                   <svg
@@ -1310,13 +1314,13 @@
                   </swiper-slide>
                 </swiper>
                 <div class="p-4 bg-white">
-                  <div class="flex items-center gap-2 text-gray-700 text-xs">
+                  <div class="flex items-center gap-2 opacity-80 text-xs">
                     <div class="flex items-center gap-1 font-semibold">
                       <p class="flex gap-1">Dubai</p>
                       <img
                         alt="img"
                         src="/src/assets/img/images.png"
-                        class="w-5 h-5 rounded-full flex-shrink-0"
+                        class="w-5 h-5 rounded-full flex-shrink-0 opacity-100"
                       />
                     </div>
                     <span>|</span>
@@ -1392,9 +1396,9 @@
                       </svg>
                     </div>
                   </div>
-                  <h1 class="font-bold leading-5 mt-3">
+                  <router-link to="" class="font-bold leading-5 mt-3 hover:text-primary block transition-all">
                     1 Bed in The Links East, The Greens and Views
-                  </h1>
+                  </router-link>
                   <div>
                     <div class="mt-3 flex items-center justify-between">
                       <div
@@ -1459,6 +1463,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/scrollbar";
+import { ref } from "vue";
 
 export default {
   name: "Home-component",
@@ -1473,10 +1478,16 @@ export default {
     const onSlideChange = () => {
       console.log("slide change");
     };
+    const selectedTab = ref(1);
+    const selectTab = (id) => {
+      selectedTab.value = id
+    };
     return {
       onSwiper,
       onSlideChange,
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
+      selectedTab,
+      selectTab
     };
   },
   data: function () {
@@ -1544,7 +1555,7 @@ export default {
         fill: {
           opacity: 1,
         },
-        colors: ["#299765", "#ffef00", "#000"],
+        colors: ["#000", "#fed147", "#299765"],
         legend: {
           position: "top",
           horizontalAlign: "left",
@@ -1555,6 +1566,11 @@ export default {
   },
 };
 </script>
-  
 <style>
+.fade-enter-active, .fade-leave-active{ 
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to{ 
+  opacity: 0;
+}
 </style>
