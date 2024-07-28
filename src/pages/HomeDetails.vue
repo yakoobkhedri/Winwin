@@ -1,4 +1,5 @@
 <template>
+  <Header />
   <main>
     <!-- home details -->
     <section class="mt-16">
@@ -1458,6 +1459,7 @@
       </div>
     </section>
   </main>
+  <Footer />
 </template>
   
 <script>
@@ -1475,9 +1477,14 @@ import "swiper/css/autoplay";
 import "swiper/css/scrollbar";
 import { ref } from "vue";
 
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
+
 export default {
-  name: "Home-component",
+  name: "HomeDetails-component",
   components: {
+    Header, 
+    Footer,
     Swiper,
     SwiperSlide,
   },
